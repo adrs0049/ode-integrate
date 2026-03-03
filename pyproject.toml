@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "ode-integrate"
+version = "0.1.0"
+description = "Adaptive ODE integrators for teaching: explicit (RK12, RK23, BS3, RK45), implicit (BE2, Rosenbrock), and auto-switching (ode23s)."
+authors = [
+    { name = "Andreas Buttenschoen", email = "andreas.buttenschoen@umass.edu" },
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "scipy",
+]
+license = "MIT"
+
+[project.urls]
+Repository = "https://github.com/adrs0049/ode-integrate"
